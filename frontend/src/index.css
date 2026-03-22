@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-green: #2E7D32;
+  --warning-orange: #F57F17;
+  --bg-light: #f8f9fa;
+  --text-dark: #343a40;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.text-primary {
+  color: var(--primary-green) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-green) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+.btn-primary:hover {
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+}
+
+.text-warning {
+  color: var(--warning-orange) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning-orange) !important;
+}
+
+/* Global Utilities */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1593113565694-c6f13e2fce19?q=80&w=2000&auto=format&fit=crop') center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Ensure all intractable elements have pointer cursors */
+a,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+.nav-link,
+.clickable {
+  cursor: pointer !important;
+}
